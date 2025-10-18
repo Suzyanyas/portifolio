@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Suzy Alves</title>
+  <title data-i18n="title">Suzy Alves</title>
   <meta name="description" content="SuzySoares" />
   <meta name="robots" content="index, follow" />
-  <link rel="stylesheet" href="/styles/global.css" />
+  <link rel="stylesheet" href="/styles/style.css" />
   <link rel="stylesheet" href="/styles/fontawesome/css/all.min.css" />
 </head>
 <body>
@@ -15,10 +15,10 @@
     <div class="inner-content">
       <h1 class="logo"><span>SUZY</span>SOARES</h1>
       <ul class="menu">
-        <li><a href="/">Home</a></li>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#portifolio">Portifólio</a></li>
-        <li><a href="#contact">Contacto</a></li>
+        <li><a href="/" data-i18n="nav-home">Home</a></li>
+        <li><a href="#about" data-i18n="nav-about">Sobre</a></li>
+        <li><a href="#portifolio" data-i18n="nav-portfolio">Portifólio</a></li>
+        <li><a href="#contact" data-i18n="nav-contact">Contacto</a></li>
       </ul>
       <ul class="social-icons">
         <li>
@@ -32,6 +32,25 @@
           </a>
         </li>
       </ul>
+      <!-- Dentro da <nav> -->
+      <div class="language-select-container">
+        <div id="language-toggle" class="language-toggle" role="button" aria-haspopup="true" aria-expanded="false" tabindex="0">
+          <img src="/images/bandeira-pt.png" alt="Bandeira de Portugal" class="flag-icon" id="current-flag">
+          <span id="current-lang">PT</span>
+          <span class="dropdown-arrow">▼</span>
+        </div>
+        <ul id="language-dropdown" class="language-dropdown" role="menu" aria-hidden="true">
+          <li role="menuitem" data-lang="pt">
+            <img src="/images/bandeira-pt.png" alt="Bandeira de Portugal" class="flag-icon"> Português
+          </li>
+          <li role="menuitem" data-lang="en">
+            <img src="/images/bandeira-en.png" alt="Bandeira do Reino Unido" class="flag-icon"> English
+          </li>
+          <li role="menuitem" data-lang="es">
+            <img src="/images/bandeira-es.png" alt="Bandeira da Espanha" class="flag-icon"> Español
+          </li>
+        </ul>
+      </div>
       <button class="menu-btn" aria-label="open navbar">
         <i class="fas fa-bars"></i>
       </button>
@@ -42,19 +61,17 @@
   <!-- COMEÇO DO HEADER -->
   <header>
     <div class="inner-content">
-      <div class="left-side" id="about">
-        <p>Olá, eu sou</p>
-        <h2><span>Suzy</span> Soares</h2>
-        <p>
-          Sou desenvolvedora Web e utilizo as tecnologias: Javascript, React.js, Node.js, Next.js, CSS, HTML.
-        </p>
+      <div class="left-side" id="">
+        <p data-i18n="header-greeting">Olá, eu sou</p>
+        <h2><span>SUZY</span> SOARES</h2>
+        <p id="typing-text" data-i18n="typing-text"></p>
         <div class="links">
-          <a href="#about" class="btn">Sobre</a>
-          <a href="#contact" class="btn">Contacto</a>
+          <a href="#about" class="btn" data-i18n="header-about">Sobre</a>
+          <a href="#contact" class="btn" data-i18n="header-contact">Contacto</a>
         </div>
       </div>
       <div class="right-side">
-        <img alt="Suzy Soares " src="/images/imgprincipal.jpg" />
+        <img alt="Suzy Soares" src="/images/imgprincipal.jpg" />
       </div>
     </div>
   </header>
@@ -62,25 +79,62 @@
 
   <!-- COMEÇO DA PARTE PRINCIPAL -->
   <main>
-    <!-- COMEÇO DA SECÇÃO DE PORTIFÓLIO -->
-    <section id="portifolio">
+    <!-- COMEÇO DA SECÇÃO SOBRE -->
+        <section id="about">
       <div class="inner-content">
-        <h2 class="section-title dark"><span>Meus </span>Trabalhos</h2>
+        <h2 class="section-title" data-i18n="about-title">Sobre Mim</h2>
+        <p class="section-description" data-i18n="about-description">
+          Gosto de transformar ideias em aplicações reais e de solucionar problemas de forma criativa usando a tecnologia. Por isso, estou sempre em busca de aprender e evoluir como desenvolvedora, contribuindo para projetos que realmente façam a diferença.
+        </p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 data-i18n="timeline-1-date">Março 2025 – Presente</h3>
+              <h4 data-i18n="timeline-1-title">CET - Técnico Especialista em Programação e Análise de Sistemas</h4>
+              <p data-i18n="timeline-1-description">Formação de nível 5 no IEFP, com foco em desenvolvimento de software, análise de sistemas e bases de dados.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 data-i18n="timeline-2-date">Paralelamente ao CET</h3>
+              <h4 data-i18n="timeline-2-title">Formação Fullstack em JavaScript</h4>
+              <p data-i18n="timeline-2-description">Curso online intensivo com foco em JavaScript moderno, React, Next.js e MongoDB, com projetos práticos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="divider" />
+    <!-- FIM DA SECÇÃO DE SOBRE -->
+
+    <!-- COMEÇO DA SECÇÃO DE PORTIFÓLIO -->
+     <section id="portifolio">
+      <div class="inner-content">
+        <h2 class="section-title dark" data-i18n="portfolio-title">Meus Projetos</h2>
         <div class="projects">
           <div class="project">
-            <img alt="Barbershop Project" loading="lazy" decoding="async" src="/images/projects/limpleve.png" />
-            <h3>Ecommerce de </br> Produtos de Limpeza</h3>
+            <img alt="Barbershop Project" loading="lazy" decoding="async" src="/images/projects/teladelogin.png" />
+            <h3 data-i18n="project-1-title">Hotel Sol&Mar </br> Gerenciamento de Reservas de Hotel em <u>PHP</u></h3>
             <div class="links">
-              <a href="https://github.com/Suzyanyas/limpleve" class="btn" target="_blank">Github</a>
-              <a href="https://limpleve.com.br" class="btn" target="_blank">Visitar</a>
+              <a href="https://github.com/Suzyanyas/5417HotelSolMar1009" class="btn" target="_blank" data-i18n="project-github">Github</a>
+            </div>
+          </div>
+          <div class="project">
+            <img alt="Barbershop Project" loading="lazy" decoding="async" src="/images/projects/limpleve.png" />
+            <h3 data-i18n="project-2-title">Ecommerce de </br> Produtos de Limpeza</h3>
+            <div class="links">
+              <a href="https://github.com/Suzyanyas/limpleve" class="btn" target="_blank" data-i18n="project-github">Github</a>
+              <a href="https://www.especialistasecapsblack.com.br" class="btn" target="_blank" data-i18n="project-visit">Visitar</a>
             </div>
           </div>
           <div class="project">
             <img alt="Barbershop Project" loading="lazy" decoding="async" src="/images/projects/projetobarbershop.png" />
-            <h3>Projeto Barbershop</h3>
+            <h3 data-i18n="project-3-title">Projeto Barbershop</h3>
             <div class="links">
-              <a href="https://github.com/Suzyanyas/barbershop" class="btn" target="_blank">Github</a>
-              <a href="https://projetobarbershop.netlify.app/" class="btn" target="_blank">Visitar</a>
+              <a href="https://github.com/Suzyanyas/barbershop" class="btn" target="_blank" data-i18n="project-github">Github</a>
+              <a href="https://projetobarbershop.netlify.app/" class="btn" target="_blank" data-i18n="project-visit">Visitar</a>
             </div>
           </div>
         </div>
@@ -91,50 +145,58 @@
     <!-- COMEÇO DA SECÇÃO DE MARCAS -->
     <section id="brands">
       <div class="inner-content">
-        <h2 class="section-title"><span>Tecnologias </span>Utilizadas</h2>
+        <h2 class="section-title" data-i18n="brands-title">Tecnologias Utilizadas</h2>
         <div class="brands">
-          <img alt="javascript" src="/images/java-script.png" loading="lazy" decoding="async" class="brand" />
-          <img alt="react" src="/images/react.png" loading="lazy" decoding="async" class="brand" />
-          <img alt="nodejs" src="/images/nodejs.png" loading="lazy" decoding="async" class="brand" />
-          <img alt="sass " src="/images/sass.png" loading="lazy" decoding="async" class="brand" />
-          <img alt="nextjs" src="/images/nextjs.512x309.png" loading="lazy" decoding="async" class="brand" />
+          <img alt="javascript" src="/images/jvascript.png" class="brand" />
+          <img alt="react" src="/images/react (2).png" class="brand" />
+          <img alt="nodejs" src="/images/node.png" class="brand" />
+          <img alt="vscode" src="/images/vscode.png" class="brand" />
+          <img alt="php" src="/images/php.png" class="brand" />
+          <img alt="java" src="/images/java.png" class="brand" />
+          <img alt="mysql" src="/images/mysql.png" class="brand" />
+          <img alt="github" src="/images/github.png" class="brand" />
+          <img alt="git" src="/images/git.png" class="brand" />
         </div>
       </div>
     </section>
     <!-- FIM DA SECÇÃO DE MARCAS -->
 
+
     <!-- COMEÇO DA SECÇÃO DE CONTACTO -->
     <section id="contact">
       <div class="inner-content">
-        <h2 class="section-title">Envie-me Uma <span>Mensagem</span></h2>
-        <p class="section-description">
+        <h2 class="section-title" data-i18n="contact-title">Envie-me Uma <span>Mensagem</span></h2>
+        <p class="section-description" data-i18n="contact-description">
           Você pode usar este espaço para enviar-me uma mensagem, <br>ao clicar em enviar mensagem, sua mensagem será direcionada para meu Whatsapp.
         </p>
         <form id="contactForm">
           <textarea id="message" placeholder="Sua Mensagem" rows="10"></textarea>
-          <button type="submit" class="btn">Enviar Mensagem</button>
+          <button type="submit" class="btn" data-i18n="contact-submit">Enviar Mensagem</button>
         </form>
       </div>
     </section>
     <!-- FIM DA SECÇÃO DE CONTACTO -->
+
+    <!-- Botão flutuante do WhatsApp -->
+    <a href="https://wa.me/351967578514" target="_blank" class="whatsapp-btn" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
 
     <!-- COMEÇO DA SECÇÃO DE BASEBOARD -->
     <section id="baseboard">
       <div class="inner-content"></div>
     </section>
     <!-- FIM DA SECÇÃO DE BASEBOARD -->
-  </main>
-  <!-- FIM DA PARTE PRINCIPAL -->
 
-  <!-- COMEÇO DO FOOTER -->
-  <footer>
-    <div class="inner-content">
-      <h2 class="logo"><span>SUZY</span>SOARES</h2>
-      <p>&copy; SuzySoares</p>
-    </div>
-  </footer>
-  <!-- FIM DO FOOTER -->
+    <!-- COMEÇO DO FOOTER -->
+    <footer>
+      <div class="inner-content">
+        <h2 class="logo"><span>SUZY</span>SOARES</h2>
+        <p data-i18n="footer-copyright">&copy; SuzySoares</p>
+      </div>
+    </footer>
+    <!-- FIM DO FOOTER -->
 
-  <script src="/scripts/main.js"></script>
+    <script src="/scripts/main.js"></script>
 </body>
 </html>
