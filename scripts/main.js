@@ -96,15 +96,22 @@ const translations = {
     es: "Hotel Sol&Mar </br> Gestión de Reservas de Hotel en <u>PHP</u>"
   },
   "project-2-title": {
-    pt: "Ecommerce de </br> Produtos de Limpeza",
-    en: "Ecommerce for </br> Cleaning Products",
-    es: "Ecommerce de </br> Productos de Limpieza"
-  },
+  "pt": "Ecommerce de Produtos de Limpeza em Javascript e React",
+  "en": "Cleaning Products Ecommerce in Javascript and React",
+  "es": "Ecommerce de Productos de Limpieza en Javascript y React"
+},
+
   "project-3-title": {
-    pt: "Projeto Barbershop",
-    en: "Barbershop Project",
-    es: "Proyecto Barbershop"
+  "pt": "Página de login para app de música em React Native",
+  "en": "Music App Login Page in React Native",
+  "es": "Página de inicio de sesión para aplicación de música en React Native"
   },
+  "project-4-title": {
+    "pt": "Projeto Barbershop",
+    "en": "Barbershop Project",
+    "es": "Proyecto Barbershop"
+  },
+
   "project-github": {
     pt: "Github",
     en: "Github",
