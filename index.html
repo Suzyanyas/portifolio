@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles/style.css" />
-  <link rel="stylesheet" href="/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
   <!-- COMEÇO DO NAVBAR -->
@@ -34,29 +34,51 @@
             <i class="fa-brands fa-linkedin"></i>
           </a>
         </li>
+        <li>
+          <a href="https://www.instagram.com/suzyalvessoares?igsh=MTV0ZGtlb2RtdmpsYQ==" aria-label="open suzy instagram" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
       </ul>
       <!-- Dentro da <nav> -->
       <div class="language-select-container">
-        <div id="language-toggle" class="language-toggle" role="button" aria-haspopup="true" aria-expanded="false" tabindex="0">
-          <img src="/images/bandeira-pt.png" alt="Bandeira de Portugal" class="flag-icon" id="current-flag">
-          <span id="current-lang">PT</span>
-          <span class="dropdown-arrow">▼</span>
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <div id="language-toggle" class="language-toggle" role="button" aria-haspopup="true" aria-expanded="false" tabindex="0">
+            <img src="/images/bandeira-pt.png" alt="Bandeira de Portugal" class="flag-icon" id="current-flag">
+            <span id="current-lang">PT</span>
+            <span class="dropdown-arrow">▼</span>
+          </div>
+          <ul id="language-dropdown" class="language-dropdown" role="menu" aria-hidden="true">
+            <li role="menuitem" data-lang="pt">
+              <img src="/images/bandeira-pt.png" alt="Bandeira de Portugal" class="flag-icon"> Português
+            </li>
+            <li role="menuitem" data-lang="en">
+              <img src="/images/bandeira-en.png" alt="Bandeira do Reino Unido" class="flag-icon"> English
+            </li>
+            <li role="menuitem" data-lang="es">
+              <img src="/images/bandeira-es.png" alt="Bandeira da Espanha" class="flag-icon"> Español
+            </li>
+          </ul>
+          <ul class="social-icons responsive-social-icons">
+            <li>
+              <a href="https://github.com/Suzyanyas" aria-label="open Suzy github" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/suzysoares/" aria-label="open suzy linkedin" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/suzyalvessoares?igsh=MTV0ZGtlb2RtdmpsYQ==" aria-label="open suzy instagram" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul id="language-dropdown" class="language-dropdown" role="menu" aria-hidden="true">
-          <li role="menuitem" data-lang="pt">
-            <img src="/images/bandeira-pt.png" alt="Bandeira de Portugal" class="flag-icon"> Português
-          </li>
-          <li role="menuitem" data-lang="en">
-            <img src="/images/bandeira-en.png" alt="Bandeira do Reino Unido" class="flag-icon"> English
-          </li>
-          <li role="menuitem" data-lang="es">
-            <img src="/images/bandeira-es.png" alt="Bandeira da Espanha" class="flag-icon"> Español
-          </li>
-        </ul>
       </div>
-      <button class="menu-btn" aria-label="open navbar">
-        <i class="fas fa-bars"></i>
-      </button>
+      </div>
     </div>
   </nav>
   <!-- FIM DO NAVBAR -->
@@ -92,7 +114,7 @@
       </li>
       <li>
         <a href="#contact" data-target="contact">
-          <i class="fa-solid fa-paper-plane"></i>
+          <i class="fa-brands fa-whatsapp"></i>
           <span data-i18n="dock-contact">Contacto</span>
         </a>
       </li>
@@ -125,7 +147,10 @@
         <div class="links">
           <a href="#about" class="btn" data-i18n="header-about">Sobre</a>
           <a href="#contact" class="btn" data-i18n="header-contact">Contacto</a>
-          <a href="https://github.com/Suzyanyas" class="btn btn-outline" target="_blank" rel="noreferrer">Github</a>
+          <a href="https://github.com/Suzyanyas" class="btn btn-outline" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+            Github
+          </a>
         </div>
       </div>
       <div class="right-side">
@@ -297,6 +322,18 @@
     <footer>
       <div class="inner-content">
         <h2 class="logo"><span>SUZY</span>SOARES</h2>
+        <ul class="footer-social-icons">
+          <li>
+            <a href="https://www.linkedin.com/in/suzysoares/" aria-label="open suzy linkedin" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/suzyalvessoares?igsh=MTV0ZGtlb2RtdmpsYQ==" aria-label="open suzy instagram" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
         <p data-i18n="footer-copyright">&copy; SuzySoares</p>
       </div>
     </footer>

@@ -372,19 +372,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const savedLang = localStorage.getItem("language") || "pt";
   setLanguage(savedLang);
 
-  // Evento do menu de navegação
-  const menuButton = document.querySelector(".menu-btn");
-  const menu = document.querySelector("ul.menu");
-
-  menuButton.addEventListener("click", () => {
-    menu.classList.toggle("show");
-  });
-
-  menu.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-      menu.classList.remove("show");
-    });
-  });
+  // (Removido código do menu-btn/menu do topo. Apenas menu flutuante lateral permanece)
 
   // Evento do formulário de contato
   const whatsappNumber = "+351967578514";
