@@ -180,6 +180,81 @@ const translations = {
     en: "Frontend",
     es: "Frontend"
   },
+  "filter-iot": {
+    pt: "IoT & n8n",
+    en: "IoT & n8n",
+    es: "IoT & n8n"
+  },
+  "internship-badge": {
+    pt: "Estágio Profissional",
+    en: "Internship",
+    es: "Pasantía"
+  },
+  "project-bresser-title": {
+    pt: "Dashboard Estação Bresser — Trigger.Systems",
+    en: "Bresser Weather Station Dashboard — Trigger.Systems",
+    es: "Dashboard Estación Bresser — Trigger.Systems"
+  },
+  "project-bresser-description": {
+    pt: "Sistema IoT de monitorização agrícola com dashboard em tempo real: leituras da estação Bresser via MQTT, automação completa em n8n, migração de dados do Google Sheets para PostgreSQL/Supabase e alertas automáticos por WhatsApp.",
+    en: "Agricultural IoT monitoring system with a real-time dashboard: Bresser station readings via MQTT, full automation in n8n, data migration from Google Sheets to PostgreSQL/Supabase, and automatic WhatsApp alerts.",
+    es: "Sistema IoT de monitorización agrícola con dashboard en tiempo real: lecturas de la estación Bresser via MQTT, automatización completa en n8n, migración de datos de Google Sheets a PostgreSQL/Supabase y alertas automáticas por WhatsApp."
+  },
+  "project-bresser-pain": {
+    pt: "O CEO não tinha visibilidade dos dados da quinta em tempo real. Tudo era registado manualmente em Google Sheets, sem automação, sem alertas e sem qualquer apoio à decisão de rega — este sistema eliminou esse problema por completo.",
+    en: "The CEO had no real-time visibility of farm data. Everything was recorded manually in Google Sheets, with no automation, no alerts and no support for irrigation decisions — this system eliminated that problem entirely.",
+    es: "El CEO no tenía visibilidad en tiempo real de los datos de la finca. Todo se registraba manualmente en Google Sheets, sin automatización, sin alertas y sin apoyo a la decisión de riego — este sistema eliminó ese problema por completo."
+  },
+  "pain-label": {
+    pt: "Problema que este projeto resolve",
+    en: "Problem this project solves",
+    es: "Problema que este proyecto resuelve"
+  },
+  "video-demo-label": {
+    pt: "Ver demonstração ao vivo",
+    en: "Watch live demo",
+    es: "Ver demostración en vivo"
+  },
+  "project-1-description": {
+    pt: "Sistema de gestão de reservas com módulos de check-in, gestão de quartos e histórico de clientes, desenvolvido em PHP com base de dados MySQL.",
+    en: "Booking management system with check-in modules, room management and client history, built in PHP with MySQL database.",
+    es: "Sistema de gestión de reservas con módulos de check-in, gestión de habitaciones e historial de clientes, desarrollado en PHP con base de datos MySQL."
+  },
+  "project-1-pain": {
+    pt: "Reservas feitas em papel ou Excel, sem histórico digital e com risco constante de overbooking.",
+    en: "Bookings managed on paper or Excel, with no digital history and constant risk of overbooking.",
+    es: "Reservas gestionadas en papel o Excel, sin historial digital y con riesgo constante de overbooking."
+  },
+  "project-2-description": {
+    pt: "E-commerce completo com catálogo de produtos, carrinho de compras e checkout, criado em React e JavaScript para uma empresa real em operação.",
+    en: "Full e-commerce with product catalogue, shopping cart and checkout, built in React and JavaScript for a real operating business.",
+    es: "E-commerce completo con catálogo de productos, carrito de compras y checkout, creado en React y JavaScript para una empresa real en funcionamiento."
+  },
+  "project-2-pain": {
+    pt: "Empresa de produtos de limpeza sem loja online, perdendo clientes por falta de presença digital no mercado.",
+    en: "Cleaning products company with no online store, losing customers due to lack of digital presence.",
+    es: "Empresa de productos de limpieza sin tienda online, perdiendo clientes por falta de presencia digital en el mercado."
+  },
+  "project-3-description": {
+    pt: "Interface de autenticação moderna e animada para app de música mobile, construída em React Native com foco em UX e identidade visual.",
+    en: "Modern, animated authentication interface for a mobile music app, built in React Native with a focus on UX and visual identity.",
+    es: "Interfaz de autenticación moderna y animada para app de música móvil, construida en React Native con enfoque en UX e identidad visual."
+  },
+  "project-3-pain": {
+    pt: "Apps de música com ecrãs de login genéricos e sem identidade visual — necessidade de uma primeira experiência do utilizador marcante.",
+    en: "Music apps with generic login screens and no visual identity — need for a memorable first user experience.",
+    es: "Apps de música con pantallas de inicio de sesión genéricas y sin identidad visual — necesidad de una primera experiencia de usuario memorable."
+  },
+  "project-4-description": {
+    pt: "Site institucional moderno para barbearia, com apresentação de serviços, equipa e contactos, completamente responsivo.",
+    en: "Modern institutional website for a barbershop, showcasing services, team and contacts, fully responsive.",
+    es: "Sitio web institucional moderno para barbería, con presentación de servicios, equipo y contactos, completamente responsivo."
+  },
+  "project-4-pain": {
+    pt: "Barbearia sem presença digital profissional para mostrar o trabalho e atrair novos clientes online.",
+    en: "Barbershop with no professional digital presence to showcase their work and attract new clients online.",
+    es: "Barbería sin presencia digital profesional para mostrar su trabajo y atraer nuevos clientes en línea."
+  },
   "tag-backend": {
     pt: "Backend",
     en: "Backend",
