@@ -205,6 +205,36 @@ const translations = {
     en: "The CEO had no real-time visibility of farm data. Everything was recorded manually in Google Sheets, with no automation, no alerts and no support for irrigation decisions — this system eliminated that problem entirely.",
     es: "El CEO no tenía visibilidad en tiempo real de los datos de la finca. Todo se registraba manualmente en Google Sheets, sin automatización, sin alertas y sin apoyo a la decisión de riego — este sistema eliminó ese problema por completo."
   },
+  "project-auto-title": {
+    pt: "AutoPreenchedor — Sistema Inteligente de <u>Preenchimento Automático</u>",
+    en: "AutoPreenchedor — Intelligent <u>Auto-Fill System</u>",
+    es: "AutoPreenchedor — Sistema Inteligente de <u>Relleno Automático</u>"
+  },
+  "project-auto-description": {
+    pt: "Sistema completo de extração automática de dados de documentos (passaportes, cartões de cidadão, IBAN, etc.) com OCR inteligente e preenchimento automático de templates Word em múltiplos idiomas.",
+    en: "Complete system for automatically extracting data from documents (passports, ID cards, IBAN, etc.) with intelligent OCR and automatic filling of Word templates in multiple languages.",
+    es: "Sistema completo de extracción automática de datos de documentos (pasaportes, documentos de identidad, IBAN, etc.) con OCR inteligente y relleno automático de plantillas Word en múltiples idiomas."
+  },
+  "project-auto-pain": {
+    pt: "Preencher manualmente os documentos de uma loja de aluguel de motas consumia 2 horas por dia. Este sistema automatiza todo o processo — do upload do documento ao template preenchido — em segundos.",
+    en: "Manually filling the documents for a motorcycle rental shop took 2 hours a day. This system automates the entire process — from document upload to filled template — in seconds.",
+    es: "Rellenar manualmente los documentos de una tienda de alquiler de motos consumía 2 horas al día. Este sistema automatiza todo el proceso — desde la subida del documento hasta la plantilla completada — en segundos."
+  },
+  "project-reservas-title": {
+    pt: "Plataforma de Reservas e Gestão para <u>Locações por Temporada</u>",
+    en: "Booking & Management Platform for <u>Vacation Rentals</u>",
+    es: "Plataforma de Reservas y Gestión para <u>Alquileres Vacacionales</u>"
+  },
+  "project-reservas-description": {
+    pt: "Plataforma web completa para divulgação e gestão de reservas de casas de temporada: o hóspede consulta disponibilidade e solicita reserva pelo site, enquanto a proprietária gere tudo pelo painel administrativo — sem WhatsApp.",
+    en: "Full web platform for vacation rental listings and booking management: guests check availability and submit requests directly on the site, while the owner manages everything through the admin panel — no WhatsApp needed.",
+    es: "Plataforma web completa para publicación y gestión de reservas de casas de temporada: el huésped consulta disponibilidad y solicita reserva desde el sitio, mientras la propietaria gestiona todo desde el panel administrativo — sin WhatsApp."
+  },
+  "project-reservas-pain": {
+    pt: "A proprietária publicou nas redes sociais que o WhatsApp estava congestionado de pedidos de reserva e que mal conseguia responder. Identifiquei a oportunidade, desenvolvi a plataforma do zero e ofereci como solução — centralizando todo o processo online.",
+    en: "The owner posted on social media that her WhatsApp was flooded with booking requests and she could barely keep up. I spotted the opportunity, built the platform from scratch and offered it as the solution — centralising the entire process online.",
+    es: "La propietaria publicó en redes sociales que su WhatsApp estaba saturado de solicitudes de reserva y que apenas ponía atender. Identifiqué la oportunidad, desarrollé la plataforma desde cero y se la ofirecí como solución — centralizando todo el proceso online."
+  },
   "pain-label": {
     pt: "Problema que este projeto resolve",
     en: "Problem this project solves",
@@ -446,6 +476,36 @@ document.addEventListener("DOMContentLoaded", () => {
   // Inicializar o idioma
   const savedLang = localStorage.getItem("language") || "pt";
   setLanguage(savedLang);
+
+  // LIGHTBOX
+  const lightboxOverlay = document.getElementById("lightbox-overlay");
+  const lightboxImg    = document.getElementById("lightbox-img");
+  const lightboxClose  = document.getElementById("lightbox-close");
+
+  function openLightbox(src, alt) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || "";
+    lightboxOverlay.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeLightbox() {
+    lightboxOverlay.classList.remove("open");
+    document.body.style.overflow = "";
+    lightboxImg.src = "";
+  }
+
+  document.querySelectorAll(".project img").forEach(img => {
+    img.addEventListener("click", () => openLightbox(img.src, img.alt));
+  });
+
+  lightboxClose.addEventListener("click", closeLightbox);
+  lightboxOverlay.addEventListener("click", e => {
+    if (e.target === lightboxOverlay) closeLightbox();
+  });
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") closeLightbox();
+  });
 
   // (Removido código do menu-btn/menu do topo. Apenas menu flutuante lateral permanece)
 
