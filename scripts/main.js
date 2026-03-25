@@ -235,6 +235,21 @@ const translations = {
     en: "The owner posted on social media that her WhatsApp was flooded with booking requests and she could barely keep up. I spotted the opportunity, built the platform from scratch and offered it as the solution — centralising the entire process online.",
     es: "La propietaria publicó en redes sociales que su WhatsApp estaba saturado de solicitudes de reserva y que apenas ponía atender. Identifiqué la oportunidad, desarrollé la plataforma desde cero y se la ofirecí como solución — centralizando todo el proceso online."
   },
+  "project-food-title": {
+    pt: "Plataforma SaaS de Gestão para <u>Empreendedores do Setor Alimentício</u>",
+    en: "SaaS Management Platform for <u>Food Entrepreneurs</u>",
+    es: "Plataforma SaaS de Gestión para <u>Emprendedores del Sector Alimenticio</u>"
+  },
+  "project-food-description": {
+    pt: "Plataforma SaaS completa para confeiteiras, produtores artesanais e pequenos negócios alimentícios: calcula o custo real de cada receita por ingrediente, gere encomendas e clientes, acompanha o status de entregas, controla o estoque e gera relatórios financeiros — com alertas automáticos por WhatsApp via n8n 24h antes de cada encomenda para que nenhuma entrega seja esquecida. Integrada com Stripe e MercadoPago.",
+    en: "Complete SaaS platform for bakers, artisan producers and small food businesses: calculates the real cost of each recipe by ingredient, manages orders and customers, tracks delivery status, controls stock and generates financial reports — with automatic WhatsApp alerts via n8n 24 hours before each order so no delivery is ever missed. Integrated with Stripe and MercadoPago.",
+    es: "Plataforma SaaS completa para reposteras, productores artesanales y pequeños negocios alimenticios: calcula el coste real de cada receta por ingrediente, gestiona pedidos y clientes, hace seguimiento de las entregas, controla el stock y genera informes financieros — con alertas automáticas por WhatsApp vía n8n 24 horas antes de cada pedido para que ninguna entrega sea olvidada. Integrada con Stripe y MercadoPago."
+  },
+  "project-food-pain": {
+    pt: "Confeiteiras perdiam encomendas por esquecimento e ainda precificavam no achismo — sem saber o custo real de cada receita, cobravam pouco, trabalhavam muito e lucravam quase nada. Esta plataforma resolve os dois problemas: envia um alerta automático no WhatsApp 24h antes de cada entrega via n8n, calcula o custo exato por ingrediente e revela a margem real de cada produto.",
+    en: "Bakers were losing orders to forgetfulness and pricing by guesswork — not knowing the real cost of each recipe, they undercharged, overworked and barely profited. This platform solves both problems: it sends an automatic WhatsApp alert 24 hours before each delivery via n8n, calculates the exact cost per ingredient and reveals the real margin on every product.",
+    es: "Las reposteras perdían pedidos por olvidos y ponían precios a ojo — sin conocer el coste real de cada receta, cobraban poco, trabajaban mucho y ganaban casi nada. Esta plataforma resuelve ambos problemas: envía una alerta automática por WhatsApp 24 horas antes de cada entrega vía n8n, calcula el coste exacto por ingrediente y muestra el margen real de cada producto."
+  },
   "pain-label": {
     pt: "Problema que este projeto resolve",
     en: "Problem this project solves",
